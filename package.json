@@ -13,7 +13,10 @@
     "precompile": "npm run clean",
     "clean": "rimraf lib/**",
     "build:less": "lessc client/less/demo.less public/css/site.css",
-    "build:bundle": "browserify ./client/js/app.js -o ./public/js/bundle.js"
+    "build:bundle": "browserify ./client/js/app.js | uglifyjs -mc > ./public/js/bundle.js",
+    "build:clean" : "rimraf public/css/*, public/js/*",
+    "prebuild" : "npm run build:clean",
+    "build" : "npm run build:less && npm run build:bundle"
   },
   "jshintConfig": {
     "esnext": "true",

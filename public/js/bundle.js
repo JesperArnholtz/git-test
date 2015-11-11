@@ -1,12 +1,1 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var lib = require('./nested/lib.js');
-
-console.log(lib.getNestedData("Jesper"));
-
-
-
-},{"./nested/lib.js":2}],2:[function(require,module,exports){
-module.exports.getNestedData = function(name){ 
-	return "This function says your name is: " + name;
-};
-},{}]},{},[1]);
+!function e(r,n,t){function o(u,f){if(!n[u]){if(!r[u]){var s="function"==typeof require&&require;if(!f&&s)return s(u,!0);if(i)return i(u,!0);var a=new Error("Cannot find module '"+u+"'");throw a.code="MODULE_NOT_FOUND",a}var c=n[u]={exports:{}};r[u][0].call(c.exports,function(e){var n=r[u][1][e];return o(n?n:e)},c,c.exports,e,r,n,t)}return n[u].exports}for(var i="function"==typeof require&&require,u=0;u<t.length;u++)o(t[u]);return o}({1:[function(e){var r=e("./nested/lib.js");console.log(r.getNestedData("Jesper"))},{"./nested/lib.js":2}],2:[function(e,r){r.exports.getNestedData=function(e){return"This function says your name is: "+e}},{}]},{},[1]);
