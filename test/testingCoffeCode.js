@@ -1,5 +1,6 @@
 var should = require("should");
-var fill = require("../lib/cofeeCode.js");
+var fill = require("../lib/coffeeCode.js");
+
 
 describe("Coffee script is compiled ok", function(){
 	it("When this passed", function(){
